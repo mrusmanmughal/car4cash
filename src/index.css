@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+p {
+  font-family: "Montserrat", sans-serif;
+}
+
+.setform {
+  width: 66%;
+  margin: auto;
+}
+th {
+  font-size: 22px;
+  padding: 0 55px 0 0;
+}
+.vehichle-details .dropdown {
+  padding-top: 10px;
+}
+.hero {
+  background-image: url("./assets/Background.png");
+  background-size: cover;
+  height: 400px;
+}
+.flag {
+  width: 90px;
+}
+.Db-Footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+}
+/* Side Bar  */

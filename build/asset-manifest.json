@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/Car4Cash/static/css/main.0708aefd.chunk.css",
+    "main.js": "/Car4Cash/static/js/main.35db27e0.chunk.js",
+    "main.js.map": "/Car4Cash/static/js/main.35db27e0.chunk.js.map",
+    "runtime-main.js": "/Car4Cash/static/js/runtime-main.a74b5bec.js",
+    "runtime-main.js.map": "/Car4Cash/static/js/runtime-main.a74b5bec.js.map",
+    "static/css/2.56f4bfd4.chunk.css": "/Car4Cash/static/css/2.56f4bfd4.chunk.css",
+    "static/js/2.57317fbb.chunk.js": "/Car4Cash/static/js/2.57317fbb.chunk.js",
+    "static/js/2.57317fbb.chunk.js.map": "/Car4Cash/static/js/2.57317fbb.chunk.js.map",
+    "index.html": "/Car4Cash/index.html",
+    "static/css/2.56f4bfd4.chunk.css.map": "/Car4Cash/static/css/2.56f4bfd4.chunk.css.map",
+    "static/css/main.0708aefd.chunk.css.map": "/Car4Cash/static/css/main.0708aefd.chunk.css.map",
+    "static/js/2.57317fbb.chunk.js.LICENSE.txt": "/Car4Cash/static/js/2.57317fbb.chunk.js.LICENSE.txt",
+    "static/js/main.35db27e0.chunk.js.LICENSE.txt": "/Car4Cash/static/js/main.35db27e0.chunk.js.LICENSE.txt",
+    "static/media/1-pic.2bdaf60d.png": "/Car4Cash/static/media/1-pic.2bdaf60d.png",
+    "static/media/1.f84228af.png": "/Car4Cash/static/media/1.f84228af.png",
+    "static/media/2.8f20be39.png": "/Car4Cash/static/media/2.8f20be39.png",
+    "static/media/2pic.ef025bf6.png": "/Car4Cash/static/media/2pic.ef025bf6.png",
+    "static/media/3-pic.0347b94e.png": "/Car4Cash/static/media/3-pic.0347b94e.png",
+    "static/media/3.ce7de08b.png": "/Car4Cash/static/media/3.ce7de08b.png",
+    "static/media/4.353b0562.png": "/Car4Cash/static/media/4.353b0562.png",
+    "static/media/index.css": "/Car4Cash/static/media/Background.1d604f20.png",
+    "static/media/CashLogo.73e35b91.png": "/Car4Cash/static/media/CashLogo.73e35b91.png",
+    "static/media/bootstrap-icons.css": "/Car4Cash/static/media/bootstrap-icons.dfd0ea12.woff2",
+    "static/media/flag.f0c34fec.png": "/Car4Cash/static/media/flag.f0c34fec.png",
+    "static/media/light-bootstrap-dashboard-react.scss?v=2.0.0": "/Car4Cash/static/media/nucleo-icons.e8827b8a.svg",
+    "static/media/reactlogo.55f6660b.png": "/Car4Cash/static/media/reactlogo.55f6660b.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a74b5bec.js",
+    "static/css/2.56f4bfd4.chunk.css",
+    "static/js/2.57317fbb.chunk.js",
+    "static/css/main.0708aefd.chunk.css",
+    "static/js/main.35db27e0.chunk.js"
+  ]
+}

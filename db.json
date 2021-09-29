@@ -1,0 +1,61 @@
+{
+  "car": [
+    {
+      "registrationNumber": "BU54RAT",
+      "co2Emissions": 215,
+      "engineCapacity": 2987,
+      "markedForExport": false,
+      "fuelType": "DIESEL",
+      "motStatus": "Valid",
+      "revenueWeight": 1910,
+      "colour": "GREY",
+      "make": "CHRYSLER",
+      "typeApproval": "M1",
+      "yearOfManufacture": 2007,
+      "taxDueDate": "2022-08-01",
+      "taxStatus": "Taxed",
+      "dateOfLastV5CIssued": "2020-08-02",
+      "motExpiryDate": "2022-09-07",
+      "wheelplan": "2 AXLE RIGID BODY",
+      "monthOfFirstRegistration": "2007-03"
+  },
+  {
+    "registrationNumber": "12345",
+    "co2Emissions": 215,
+    "engineCapacity": 2987,
+    "markedForExport": false,
+    "fuelType": "DIESEL",
+    "motStatus": "Valid",
+    "revenueWeight": 1910,
+    "colour": "GREY",
+    "make": "CHRYSLER",
+    "typeApproval": "M1",
+    "yearOfManufacture": 2007,
+    "taxDueDate": "2022-08-01",
+    "taxStatus": "Taxed",
+    "dateOfLastV5CIssued": "2020-08-02",
+    "motExpiryDate": "2022-09-07",
+    "wheelplan": "2 AXLE RIGID BODY",
+    "monthOfFirstRegistration": "2007-03"
+},
+{
+  "registrationNumber": "abcd",
+  "co2Emissions": 215,
+  "engineCapacity": 2987,
+  "markedForExport": false,
+  "fuelType": "DIESEL",
+  "motStatus": "Valid",
+  "revenueWeight": 1910,
+  "colour": "GREY",
+  "make": "CHRYSLER",
+  "typeApproval": "M1",
+  "yearOfManufacture": 2007,
+  "taxDueDate": "2022-08-01",
+  "taxStatus": "Taxed",
+  "dateOfLastV5CIssued": "2020-08-02",
+  "motExpiryDate": "2022-09-07",
+  "wheelplan": "2 AXLE RIGID BODY",
+  "monthOfFirstRegistration": "2007-03"
+}
+]
+}
