@@ -1,6 +1,6 @@
 {
   "name": "light-bootstrap-dashboard-react",
-  "homepage": "http://gitname.github.io/Car4Cash",
+ 
   "version": "2.0.0",
   "dependencies": {
     "@fortawesome/fontawesome-free": "5.15.2",
@@ -30,6 +30,7 @@
     "typescript": "4.1.3"
   },
   "scripts": {
+    
     "json-server": "json-server --watch db.json --port 3007",
     "start-dev": "concurrently \"npm start \" \"npm run json-server\"",
     "start": "react-scripts start",

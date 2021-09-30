@@ -19,67 +19,95 @@ const RetrieveValuation = () => {
             and click 'Retrieve Valuation'.
           </small>
           <div className>
-            <table class="text-center m-auto  ">
-              <tbody>
-                <tr>
-                  <th scope="row">Email Address</th>
-                  <td scope="col">
-                    <div class="input-group  ">
-                      <span class="input-group-text">
-                        <i className="bi bi-envelope-fill"></i>
-                      </span>
-                      <input
-                        type="email"
-                        class="form-control "
-                        placeholder="Enter Your E-mail"
-                      />
+            <main class="login-form">
+              <div class="cotainer">
+                <div class="row justify-content-center">
+                  <div class="col-md-8">
+                    <div class="">
+                      <div class="card-body">
+                        <form
+                          method="POST"
+                          action=""
+                          // onSubmit={(e) =>
+                          //   dispatch(
+                          //     Add_contactDetails(state),
+                          //     e.preventDefault(),
+                          //     (e) => sendEmail(e),
+                          //     history.push("/valuation")
+                          //   )
+                          // }
+                        >
+                          <div class="form-group row">
+                            <h3
+                              for="password"
+                              class="col-md-4 col-form-label text-md-center"
+                            >
+                              Email Address
+                            </h3>
+                            <div class="col-md-6">
+                              <div class="input-group mb-3">
+                                <span class="input-group-text">
+                                  <i className="bi bi-envelope-fill"></i>
+                                </span>
+                                <input
+                                  type="email"
+                                  class="form-control "
+                                  name="email"
+                                  required
+                                />
+                              </div>
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <h4
+                              for="password"
+                              class="col-md-4 col-form-label text-md-center"
+                            >
+                              Your PostalCode
+                            </h4>
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                class="form-control mb-3 w-50"
+                                name="fname"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <div class="form-group row">
+                            <h3
+                              for="password"
+                              class="col-md-4 col-form-label text-md-center"
+                            >
+                              Vehicle Reg:
+                            </h3>
+                            <div class="col-md-6">
+                              <input
+                                type="text"
+                                class="form-control  mb-3 w-50 "
+                                name="surname"
+                                required
+                              />
+                            </div>
+                          </div>
+                          <Link to="/RetriveMessage">
+                            <button class="btn  text-success  btn-primary btn-lg border rounded-pill fw-bold ">
+                              <span className="h3 text-success">
+                                Click Here To Retrieve Valuation
+                              </span>
+                              <i class="bi bi-arrow-right-circle-fill ps-3 h3">
+                                {" "}
+                              </i>
+                            </button>
+                          </Link>
+                        </form>
+                      </div>
                     </div>
-                  </td>
-                </tr>
-
-                <tr>
-                  <th scope="row"> </th>
-                  <td scope="col" className="text-start font-italic">
-                    <br />
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Your Postcode</th>
-                  <td scope="col">
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control "
-                        aria-label="Amount (to the nearest dollar)"
-                        placeholder="Enter Postal Code"
-                      />
-                    </div>
-                  </td>
-                </tr>
-                <tr>
-                  <th scope="row">Vehicle Reg :</th>
-                  <td scope="col">
-                    <div class="input-group mb-3">
-                      <input
-                        type="text"
-                        class="form-control "
-                        aria-label="Amount (to the nearest dollar)"
-                        placeholder="Enter Reg No"
-                      />
-                    </div>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+                  </div>
+                </div>
+              </div>
+            </main>
           </div>
-          <Link to="/RetriveMessage">
-            <button class="btn  text-success btn-primary btn-lg border rounded-pill fw-bold ">
-              <span className="h3 text-success">
-                Click Here To Retrieve Valuation
-              </span>
-              <i class="bi bi-arrow-right-circle-fill ps-3 h3"> </i>
-            </button>
-          </Link>
         </div>
       </div>
     </>

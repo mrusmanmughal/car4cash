@@ -12,7 +12,9 @@ import RetrieveValuation from "./Comps/RetrieveValuation/RetrieveValuation";
 import Login from "./Comps/Login/Login";
 import ChangeAppointment from "./Comps/ChangeApointment/ChangeAppointment";
 import RetriveMessage from "./Comps/RetrieveValuation/RetriveMessage";
-
+//Error page
+import ErrorPage from "./Comps/ErrorPage/ErrorPage";
+import Error from "./Errorpage";
 // Dashboard Pages
 
 const Routess = () => {
@@ -27,6 +29,7 @@ const Routess = () => {
         <Route path="/retrievevaluation" component={RetrieveValuation} exact />
         <Route path="/changeappointment" component={ChangeAppointment} exact />
         <Route path="/RetriveMessage" component={RetriveMessage} exact />
+        <Route path="/error" component={ErrorPage} exact />
         <Route path="/login" component={Login} />
       </Switch>
     </>

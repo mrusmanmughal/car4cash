@@ -49,7 +49,7 @@ const ContactDetails = () => {
         <div className="container px-5 pb-3 ">
           <h2 className="mt-3 border-bottom border-dark pb-3">
             Contact information and details
-          </h2>{" "}
+          </h2>
           <main class="login-form ">
             <div class="cotainer">
               <div class="row justify-content-center">
@@ -63,7 +63,8 @@ const ContactDetails = () => {
                           dispatch(
                             Add_contactDetails(state),
                             e.preventDefault(),
-                            (e) => sendEmail(e)
+                            (e) => sendEmail(e),
+                            history.push("/valuation")
                           )
                         }
                       >
@@ -181,19 +182,16 @@ const ContactDetails = () => {
                             </div>
                           </div>
                         </div>
-                        <Link to="/valuation">
-                          <button
-                            class="btn  text-success btn-primary btn-lg border rounded-pill fw-bold "
-                            type="submit"
-                          >
-                            <span className="h3 text-success">
-                              Get Your Validation
-                            </span>
-                            <i class="bi bi-arrow-right-circle-fill ps-3 h3">
-                              {" "}
-                            </i>
-                          </button>
-                        </Link>
+
+                        <button
+                          class="btn  text-success btn-primary btn-lg border rounded-pill fw-bold "
+                          type="submit"
+                        >
+                          <span className="h3 text-success">
+                            Get Your Validation
+                          </span>
+                          <i class="bi bi-arrow-right-circle-fill ps-3 h3"></i>
+                        </button>
                       </form>
                     </div>
                   </div>
