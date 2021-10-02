@@ -6,6 +6,9 @@ const Valuation = () => {
   const email = useSelector(
     (state) => state.contactDetails.contactDetails.email
   );
+  const RetriveEmail = useSelector(
+    (state) => state.retriveEvaluation.retriveEvaluation.email
+  );
 
   return (
     <>
@@ -23,9 +26,13 @@ const Valuation = () => {
               <span className="text-success"> We would </span> love to{" "}
               <span className="text-success"> value your car </span>
               <br /> confirmation of your valuation request has sent to:
-              <span className="text-success"> {email}</span> <br /> We will be
-              in touch shortly to arrange an appointment for us to view your car
-              and organize payment <br /> Alternatively, please call us on{" "}
+              <span className="text-success">
+                {" "}
+                {email} {RetriveEmail}
+              </span>{" "}
+              <br /> We will be in touch shortly to arrange an appointment for
+              us to view your car and organize payment <br /> Alternatively,
+              please call us on{" "}
               <span className="text-success"> 112 33 6666</span>
             </h2>
             <h5 className="my-5">

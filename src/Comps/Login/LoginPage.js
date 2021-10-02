@@ -1,8 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+
 import Logo from "../../assets/CashLogo.png";
 import { useHistory } from "react-router-dom";
-const Login = () => {
+const LoginPage = () => {
   let history = useHistory();
   const [Show, setShow] = useState(true);
   const [state, setstate] = useState({
@@ -88,4 +88,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default LoginPage;

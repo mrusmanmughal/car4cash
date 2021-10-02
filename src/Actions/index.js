@@ -24,3 +24,19 @@ export const Add_contactDetails = (val) => {
     },
   };
 };
+export const retrive_evaluation = (val) => {
+  return {
+    type: "retrive_evaluation",
+    payload: {
+      data: val,
+    },
+  };
+};
+export const Change_appointment = (val) => {
+  return {
+    type: "Change_appointment",
+    payload: {
+      data: val,
+    },
+  };
+};

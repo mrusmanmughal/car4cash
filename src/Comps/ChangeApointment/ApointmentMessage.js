@@ -1,10 +1,10 @@
 import React from "react";
 import Logo from "../../assets/CashLogo.png";
-
 import { useSelector } from "react-redux";
-const RetriveMessage = () => {
-  const RetriveEmail = useSelector(
-    (state) => state.retriveEvaluation.retriveEvaluation.email
+
+const ApointmentMessage = () => {
+  const appointmentEmail = useSelector(
+    (state) => state.Changeappointment.changeappointment.email
   );
   return (
     <>
@@ -21,10 +21,12 @@ const RetriveMessage = () => {
               <span className="text-success"> We would </span> love to{" "}
               <span className="text-success"> value your car </span>
               <br /> confirmation of your valuation request has sent to:
-              <span className="text-success"> {RetriveEmail}</span> <br /> We
-              will be in touch shortly to arrange an appointment for us to view
-              your car and organize payment <br /> Alternatively, please call us
-              on <span className="text-success"> 112 33 6666</span>
+              <span className="text-success">
+                {appointmentEmail}
+              </span> <br /> We will be in touch shortly to arrange an
+              appointment for us to view your car and organize payment <br />{" "}
+              Alternatively, please call us on{" "}
+              <span className="text-success"> 112 33 6666</span>
             </h2>
             <h5 className="my-5">
               P.S. Please don't wait too long - market prices are constantly
@@ -41,4 +43,4 @@ const RetriveMessage = () => {
   );
 };
 
-export default RetriveMessage;
+export default ApointmentMessage;

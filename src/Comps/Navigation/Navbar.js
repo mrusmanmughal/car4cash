@@ -46,7 +46,7 @@ const Navbar = () => {
               </li>
             </ul>
             <Link to="/login">
-              <i class="bi bi-person-fill h3 text-white   "></i>
+              <i class="bi bi-person-fill h3 text-white "></i>
             </Link>
           </div>
         </div>

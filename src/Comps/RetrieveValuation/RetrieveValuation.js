@@ -1,8 +1,42 @@
-import React from "react";
+import React, { useState } from "react";
+import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
+import { retrive_evaluation } from "../../Actions/index";
 import Logo from "../../assets/CashLogo.png";
+import { useDispatch } from "react-redux";
+
+//Email js
+import emailjs from "emailjs-com";
+import { init } from "emailjs-com";
+init("user_qL458AsCBLpum5wzU0ADn");
 
 const RetrieveValuation = () => {
+  const history = useHistory();
+  const dispatch = useDispatch();
+
+  ///Email js
+  const sendEmail = (e) => {
+    emailjs
+      .sendForm("gmail", "HMSlive", e.target, "user_qL458AsCBLpum5wzU0ADn")
+      .then(
+        (result) => {
+          console.log(result.text);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    history.push("/valuation");
+  };
+  const [state, setstate] = useState({
+    email: "",
+    postalcode: "",
+    Vehiclecode: "",
+  });
+  const { Vehiclecode, email, postalcode } = state;
+  const Handlechange = (e) => {
+    setstate({ ...state, [e.target.name]: e.target.value });
+  };
   return (
     <>
       <div className="mt-3 shadow border-dark setform">
@@ -26,16 +60,14 @@ const RetrieveValuation = () => {
                     <div class="">
                       <div class="card-body">
                         <form
-                          method="POST"
-                          action=""
-                          // onSubmit={(e) =>
-                          //   dispatch(
-                          //     Add_contactDetails(state),
-                          //     e.preventDefault(),
-                          //     (e) => sendEmail(e),
-                          //     history.push("/valuation")
-                          //   )
-                          // }
+                          onSubmit={(e) =>
+                            dispatch(
+                              retrive_evaluation(state),
+                              e.preventDefault(),
+                              (e) => sendEmail(e),
+                              history.push("/valuation")
+                            )
+                          }
                         >
                           <div class="form-group row">
                             <h3
@@ -53,6 +85,8 @@ const RetrieveValuation = () => {
                                   type="email"
                                   class="form-control "
                                   name="email"
+                                  onChange={(e) => Handlechange(e)}
+                                  value={email}
                                   required
                                 />
                               </div>
@@ -69,8 +103,10 @@ const RetrieveValuation = () => {
                               <input
                                 type="text"
                                 class="form-control mb-3 w-50"
-                                name="fname"
+                                name="postalcode"
+                                onChange={(e) => Handlechange(e)}
                                 required
+                                value={postalcode}
                               />
                             </div>
                           </div>
@@ -85,21 +121,25 @@ const RetrieveValuation = () => {
                               <input
                                 type="text"
                                 class="form-control  mb-3 w-50 "
-                                name="surname"
+                                name="Vehiclecode"
+                                alue={Vehiclecode}
+                                onChange={(e) => Handlechange(e)}
                                 required
                               />
                             </div>
                           </div>
-                          <Link to="/RetriveMessage">
-                            <button class="btn  text-success  btn-primary btn-lg border rounded-pill fw-bold ">
-                              <span className="h3 text-success">
-                                Click Here To Retrieve Valuation
-                              </span>
-                              <i class="bi bi-arrow-right-circle-fill ps-3 h3">
-                                {" "}
-                              </i>
-                            </button>
-                          </Link>
+
+                          <button
+                            class="btn  text-success  btn-primary btn-lg border rounded-pill fw-bold "
+                            type="submit"
+                          >
+                            <span className="h3 text-success">
+                              Retrieve Valuation
+                            </span>
+                            <i class="bi bi-arrow-right-circle-fill ps-3 h3">
+                              {" "}
+                            </i>
+                          </button>
                         </form>
                       </div>
                     </div>

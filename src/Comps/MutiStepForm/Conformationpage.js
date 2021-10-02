@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import { useHistory } from "react-router-dom";
 import Logo from "../../assets/CashLogo.png";
 import Step1Img from "../../assets/1.png";
 import { Link } from "react-router-dom";
@@ -7,9 +8,10 @@ import { useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 const Conformationpage = () => {
+  const history = useHistory();
   const [state, setstate] = useState({});
-  const { id } = useParams();
-  const regNo = useSelector((state) => state.RegNoReducer.RegNo);
+  const { registrationNumber } = useParams();
+  const reg = useSelector((state) => state.RegNoReducer.RegNo);
   useEffect(() => {
     loadData();
   }, []);
@@ -18,7 +20,7 @@ const Conformationpage = () => {
     setstate(loadData.data[0]);
     console.log(loadData.data);
   };
-
+  console.log(reg);
   return (
     <>
       <div className="mt-3 shadow border-dark setform">
